@@ -17,7 +17,7 @@ namespace HolaMundo
             //TiposColecciones.HashTable();
             //Automovil(35);
             //Calc();
-            Herencia();
+            //Herencia();
             
         }
 
