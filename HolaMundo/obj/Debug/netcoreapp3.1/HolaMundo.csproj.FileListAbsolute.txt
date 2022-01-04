@@ -1,0 +1,13 @@
+/Users/juanfernando/Projects/HolaMundo/HolaMundo/bin/Debug/netcoreapp3.1/HolaMundo.deps.json
+/Users/juanfernando/Projects/HolaMundo/HolaMundo/bin/Debug/netcoreapp3.1/HolaMundo.runtimeconfig.json
+/Users/juanfernando/Projects/HolaMundo/HolaMundo/bin/Debug/netcoreapp3.1/HolaMundo.runtimeconfig.dev.json
+/Users/juanfernando/Projects/HolaMundo/HolaMundo/bin/Debug/netcoreapp3.1/HolaMundo.dll
+/Users/juanfernando/Projects/HolaMundo/HolaMundo/bin/Debug/netcoreapp3.1/HolaMundo.pdb
+/Users/juanfernando/Projects/HolaMundo/HolaMundo/obj/Debug/netcoreapp3.1/HolaMundo.csproj.AssemblyReference.cache
+/Users/juanfernando/Projects/HolaMundo/HolaMundo/obj/Debug/netcoreapp3.1/HolaMundo.GeneratedMSBuildEditorConfig.editorconfig
+/Users/juanfernando/Projects/HolaMundo/HolaMundo/obj/Debug/netcoreapp3.1/HolaMundo.AssemblyInfoInputs.cache
+/Users/juanfernando/Projects/HolaMundo/HolaMundo/obj/Debug/netcoreapp3.1/HolaMundo.AssemblyInfo.cs
+/Users/juanfernando/Projects/HolaMundo/HolaMundo/obj/Debug/netcoreapp3.1/HolaMundo.csproj.CoreCompileInputs.cache
+/Users/juanfernando/Projects/HolaMundo/HolaMundo/obj/Debug/netcoreapp3.1/HolaMundo.dll
+/Users/juanfernando/Projects/HolaMundo/HolaMundo/obj/Debug/netcoreapp3.1/HolaMundo.pdb
+/Users/juanfernando/Projects/HolaMundo/HolaMundo/obj/Debug/netcoreapp3.1/HolaMundo.genruntimeconfig.cache
