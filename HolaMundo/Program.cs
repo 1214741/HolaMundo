@@ -26,7 +26,7 @@ namespace HolaMundo
             //CapturaDeLosErrores.IngresarNumero();
             //CapturaDeLosErrores.Checar();
             //UsarThrow();
-            ClasesAnonimas();
+            //ClasesAnonimas();
 
         }
 
@@ -122,16 +122,16 @@ namespace HolaMundo
 
         static public void Herencia()
         {
-            Hombre hombre = new Hombre();
-            Mujer mujer = new Mujer();
+            Hombre hombre = new Hombre("Juan");
+            Mujer mujer = new Mujer("Isabel");
 
             // Método de la clase humano
             hombre.Respirar();
             mujer.Respirar();
 
             // Asigno un nombre particular a cada objeto
-            hombre.Nombre = "Juan";
-            mujer.Nombre = "Isabel";
+            hombre.Edad = 24;
+            mujer.Edad = 20;
 
             // Muestro el nombre de cada objeto gracias al encapsulamiento
             hombre.MostrarNombre();
@@ -140,6 +140,8 @@ namespace HolaMundo
             // Método particular de cada clase
             hombre.Afeitarse();
             mujer.PintarUnas();
+
+            Console.WriteLine($"Edad de {hombre.Nombre}: {hombre.Edad}\nEdad de {mujer.Nombre}: {mujer.Edad}");
 
 
         }

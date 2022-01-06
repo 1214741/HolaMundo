@@ -4,8 +4,14 @@ namespace Herencia
 {
     class Persona
     {
-        protected string nombre;
         public string Nombre { get; set; }
+        public int Edad { get; set; }
+
+        // El constructor de esta clase se debe referenciar manualmente en las subclases
+        public Persona(string nombrePersona)
+        {
+            Nombre = nombrePersona;
+        }
 
         public void MostrarNombre()
         {
@@ -21,6 +27,9 @@ namespace Herencia
 
     class Hombre : Persona
     {
+        // Contructor reconstruido
+        public Hombre(string nombre) : base(nombre) => Console.WriteLine("Soy hombre");
+
         public void Afeitarse()
         {
             Console.WriteLine("Me puedo afeitar");
@@ -29,6 +38,9 @@ namespace Herencia
 
     class Mujer : Persona
     {
+        // Constructor recontruido
+        public Mujer(string nombre) : base(nombre) => Console.WriteLine("Soy mujer");
+
         public void PintarUnas()
         {
             Console.WriteLine("Me pinto las uñas");
