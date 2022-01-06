@@ -22,11 +22,37 @@ namespace HolaMundo
             //TiposColecciones.HashTable();
             //Automovil(35);
             //Calc();
-            //Herencia();
+            Herencia();
             //CapturaDeLosErrores.IngresarNumero();
             //CapturaDeLosErrores.Checar();
-            UsarThrow();
+            //UsarThrow();
+            ClasesAnonimas();
 
+        }
+
+        public static void ClasesAnonimas()
+        {
+            /*
+             * Las clases anónimas se usan en casos muy particulares donde se puede
+             * reducir el código a partir de ellas
+             * El tipo de las variables lo denomina el compilador dependiendo
+             * del tipo de valor que e este guardando en él
+             * La cantidad de datos, el tipo de datos y el orden de los datos
+             * determina si 2 o mas objetos son de la misma clase
+             */
+            int edad = 23;
+            var miVariable = new { Nombre = "Juan", Edad = edad };
+            Console.WriteLine($"Nombre: {miVariable.Nombre}\nEdad: {miVariable.Edad}");
+            var otraVariable = new { Nombre = "Isabel", Edad = 20 };
+            miVariable = otraVariable;
+            Console.WriteLine($"Nombre: {miVariable.Nombre}\nEdad: {miVariable.Edad}");
+            /*
+             * Desventajas:
+             * Sólo puede tener campos públicos
+             * Todos los campos deben ser iniciados
+             * Los campos no pueden ser de tipo static
+             * No puedo definir métodos
+             */
         }
 
         static public void UsarThrow()
@@ -53,7 +79,7 @@ namespace HolaMundo
 
         static public void Matriz()
         {
-            // Matriz
+            // TODO: Matriz
             int[,] matriz = new int[2, 3];
             /* 
              * Es un arreglo de 2 dimensiones [filas, columnas]
@@ -79,7 +105,7 @@ namespace HolaMundo
 
         static public void Automovil(int vel)
         {
-            // Clase Automovil
+            // TODO: Clase Automovil
             Automovil auto = new Automovil(vel, 2000);
             int v = auto.Velocidad; // Ontener el set de un atributo
             Console.WriteLine("La velocidad es: {0}, y si precio es: {1}", v, auto.Precio);
@@ -99,8 +125,23 @@ namespace HolaMundo
             Hombre hombre = new Hombre();
             Mujer mujer = new Mujer();
 
+            // Método de la clase humano
+            hombre.Respirar();
+            mujer.Respirar();
+
+            // Asigno un nombre particular a cada objeto
+            hombre.Nombre = "Juan";
+            mujer.Nombre = "Isabel";
+
+            // Muestro el nombre de cada objeto gracias al encapsulamiento
             hombre.MostrarNombre();
             mujer.MostrarNombre();
+
+            // Método particular de cada clase
+            hombre.Afeitarse();
+            mujer.PintarUnas();
+
+
         }
 
     }    

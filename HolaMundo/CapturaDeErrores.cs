@@ -21,7 +21,7 @@ namespace CapturaDeErrores
             }
             catch (FormatException e)
             {
-                Console.WriteLine("Ingresaste una letra. {0}", e.Message);
+                Console.WriteLine($"Ingresaste una letra. {e.Message}");
             }
             finally
             {

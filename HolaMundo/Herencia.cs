@@ -5,23 +5,33 @@ namespace Herencia
     class Persona
     {
         protected string nombre;
+        public string Nombre { get; set; }
+
+        public void MostrarNombre()
+        {
+            Console.WriteLine("El nombre de esta persona es: {0}", Nombre);
+        }
+
+        public void Respirar()
+        {
+            Console.WriteLine("Estoy respirando");
+        }
+
     }
 
     class Hombre : Persona
     {
-        public void MostrarNombre()
+        public void Afeitarse()
         {
-            nombre = "Juan";
-            Console.WriteLine("El nombre de este hombre es: {0}", nombre);
+            Console.WriteLine("Me puedo afeitar");
         }
     }
 
     class Mujer : Persona
     {
-        public void MostrarNombre()
+        public void PintarUnas()
         {
-            nombre = "Isabel";
-            Console.WriteLine("El nombre de esta mujer es: {0}", nombre);
+            Console.WriteLine("Me pinto las uñas");
         }
     }
 }

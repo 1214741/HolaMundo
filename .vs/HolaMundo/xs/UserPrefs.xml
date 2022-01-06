@@ -1,19 +1,17 @@
 ﻿<Properties StartupConfiguration="{0D73F1B4-04B8-4532-882C-CD86CE8B2454}|Default">
   <MonoDevelop.Ide.ItemProperties.HolaMundo PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="HolaMundo/CapturaDeErrores.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="HolaMundo/Program.cs">
     <Files>
-      <File FileName="HolaMundo/Program.cs" Line="48" Column="16" />
-      <File FileName="HolaMundo/CapturaDeErrores.cs" Line="41" Column="1" />
-      <File FileName="HolaMundo/Herencia.cs" Line="15" Column="17" />
-      <File FileName="HolaMundo/SobreCarga.cs" Line="8" Column="12" />
-      <File FileName="HolaMundo/Colecciones.cs" Line="5" Column="22" />
-      <File FileName="HolaMundo/Encapsulamiento.cs" Line="27" Column="12" />
+      <File FileName="HolaMundo/Program.cs" Line="140" Column="47" />
+      <File FileName="HolaMundo/Herencia.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="HolaMundo" expanded="True">
-            <Node name="HolaMundo" expanded="True" selected="True" />
+            <Node name="HolaMundo" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
