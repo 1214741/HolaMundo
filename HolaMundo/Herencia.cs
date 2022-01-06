@@ -29,6 +29,11 @@ namespace Herencia
 
     }
 
+    interface ITallaCopa
+    {
+        void Tallaje(int tc);
+    }
+
     class Hombre : Persona
     {
         // Contructor reconstruido
@@ -40,7 +45,8 @@ namespace Herencia
         }
     }
 
-    class Mujer : Persona
+    // Debo heredar primero de la clase, y luego las interfaces que use
+    class Mujer : Persona, ITallaCopa
     {
         // Constructor recontruido
         public Mujer(string nombre) : base(nombre) => Console.WriteLine("Soy mujer");
@@ -52,5 +58,10 @@ namespace Herencia
 
         // Polimorfismo: Oculto el método de la clase Persona y ejecuto este
         public override void HacerPendejadas() => Console.WriteLine("Yo no hago pendejadas");
+
+        public void Tallaje(int tc)
+        {
+            Console.WriteLine($"Mi talla de copa es: {tc}");
+        }
     }
 }

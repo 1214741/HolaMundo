@@ -24,7 +24,8 @@ namespace HolaMundo
             //Calc();
             //Herencia();
             //HerenciaSustitucion();
-            Polimorfismo();
+            //Polimorfismo();
+            Interfaces();
             //CapturaDeLosErrores.IngresarNumero();
             //CapturaDeLosErrores.Checar();
             //UsarThrow();
@@ -166,6 +167,12 @@ namespace HolaMundo
 
             hombre.HacerPendejadas();
             mujer.HacerPendejadas();
+        }
+
+        static public void Interfaces()
+        {
+            Mujer mujer = new Mujer("Maria");
+            mujer.Tallaje(5);
         }
 
     }    
