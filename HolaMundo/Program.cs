@@ -23,9 +23,19 @@ namespace HolaMundo
             //Automovil(35);
             //Calc();
             //Herencia();
-            CapturaDeLosErrores.Ejemplo();
-            
-            
+            //CapturaDeLosErrores.IngresarNumero();
+            //CapturaDeLosErrores.Checar();
+            UsarThrow();
+
+        }
+
+        static public void UsarThrow()
+        {
+            Console.WriteLine("Digite un número");
+            int a = int.Parse(Console.ReadLine());
+            Console.WriteLine(CapturaDeLosErrores.NombreDia(a));
+
+
         }
 
         static public void Arreglo()
@@ -45,8 +55,26 @@ namespace HolaMundo
         {
             // Matriz
             int[,] matriz = new int[2, 3];
-            // Es un arreglo de 2 dimensiones [filas, columnas]
-            // Al igual que un array, es estatico, toca definir el tamaño
+            /* 
+             * Es un arreglo de 2 dimensiones [filas, columnas]
+             * Al igual que un array, es estatico, toca definir el tamaño
+            */
+            int cont = 0;
+            for(int i = 0; i < 2; i++)
+            {
+                for(int j = 0; j < 3; j++)
+                {
+                    matriz[i, j] = cont;
+                    cont++;
+                }
+            }
+            for (int i = 0; i < 2; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    Console.WriteLine(matriz[i, j]);
+                }
+            }
         }
 
         static public void Automovil(int vel)

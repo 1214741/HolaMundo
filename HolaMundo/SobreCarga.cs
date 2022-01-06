@@ -4,8 +4,9 @@ namespace SobreCarga
 {
     class Calculadora
     {
-        /* Clase para ver como funciona la sobrecarga de métodos
-            También aplica a los contructores en caso de necesitarlo
+        /* 
+         * Clase para ver como funciona la sobrecarga de métodos
+         * También aplica a los contructores en caso de necesitarlo
          */
         public void Suma()
         {

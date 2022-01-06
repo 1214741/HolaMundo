@@ -22,9 +22,9 @@ namespace Encapsulamiento
         public int Precio { get; set; }
 
         /*
-         De ser necesario puedo tener métodos públicos y privados
-         Los métodos públicos los puedo llamar desde otras clases
-         Los métodos privados solo los puedo usar en la clase en la que estan definidos
+         * De ser necesario puedo tener métodos públicos y privados
+         * Los métodos públicos los puedo llamar desde otras clases
+         * Los métodos privados solo los puedo usar en la clase en la que estan definidos
          */
 
         // Constructor
