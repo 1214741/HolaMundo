@@ -23,7 +23,8 @@ namespace HolaMundo
             //Automovil(35);
             //Calc();
             //Herencia();
-            HerenciaSustitucion();
+            //HerenciaSustitucion();
+            Polimorfismo();
             //CapturaDeLosErrores.IngresarNumero();
             //CapturaDeLosErrores.Checar();
             //UsarThrow();
@@ -156,6 +157,15 @@ namespace HolaMundo
             Mujer mujer = new Mujer("Ella");
             persona = mujer;
             persona.MostrarNombre();
+        }
+
+        static public void Polimorfismo()
+        {
+            Hombre hombre = new Hombre("Pepe");
+            Mujer mujer = new Mujer("Rosita");
+
+            hombre.HacerPendejadas();
+            mujer.HacerPendejadas();
         }
 
     }    

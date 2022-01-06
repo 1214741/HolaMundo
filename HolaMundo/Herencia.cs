@@ -23,6 +23,10 @@ namespace Herencia
             Console.WriteLine("Estoy respirando");
         }
 
+        // Virtual quiere decir que todas las subclases deben de heredar, y modificar
+        // a conveniencia, según corresponda
+        public virtual void HacerPendejadas() => Console.WriteLine("Estoy haciendo una pendejada");
+
     }
 
     class Hombre : Persona
@@ -45,5 +49,8 @@ namespace Herencia
         {
             Console.WriteLine("Me pinto las uñas");
         }
+
+        // Polimorfismo: Oculto el método de la clase Persona y ejecuto este
+        public override void HacerPendejadas() => Console.WriteLine("Yo no hago pendejadas");
     }
 }

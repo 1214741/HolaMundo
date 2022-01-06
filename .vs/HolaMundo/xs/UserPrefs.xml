@@ -2,9 +2,9 @@
   <MonoDevelop.Ide.ItemProperties.HolaMundo PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="HolaMundo/Herencia.cs">
     <Files>
-      <File FileName="HolaMundo/Program.cs" Line="140" Column="47" />
-      <File FileName="HolaMundo/Herencia.cs" Line="11" Column="1" />
-      <File FileName="HolaMundo/Encapsulamiento.cs" Line="1" Column="1" />
+      <File FileName="HolaMundo/Program.cs" Line="27" Column="28" />
+      <File FileName="HolaMundo/Herencia.cs" Line="47" Column="10" />
+      <File FileName="HolaMundo/Encapsulamiento.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
