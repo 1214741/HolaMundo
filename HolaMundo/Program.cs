@@ -22,7 +22,8 @@ namespace HolaMundo
             //TiposColecciones.HashTable();
             //Automovil(35);
             //Calc();
-            Herencia();
+            //Herencia();
+            HerenciaSustitucion();
             //CapturaDeLosErrores.IngresarNumero();
             //CapturaDeLosErrores.Checar();
             //UsarThrow();
@@ -141,9 +142,20 @@ namespace HolaMundo
             hombre.Afeitarse();
             mujer.PintarUnas();
 
-            Console.WriteLine($"Edad de {hombre.Nombre}: {hombre.Edad}\nEdad de {mujer.Nombre}: {mujer.Edad}");
+            Console.WriteLine($"Edad de {hombre.Nombre}: {hombre.Edad}\nEdad de {mujer.Nombre}: {mujer.Edad}");            
+        }
 
-
+        static public void HerenciaSustitucion()
+        {
+            // Principio de sustitución: ... es siempre un...
+            Persona alguien = new Hombre("Pedro");
+            alguien.MostrarNombre();
+            // No me aparecen a los métodos particulares de la clase Hombre
+            Persona persona = new Persona("Persona");
+            persona.MostrarNombre();
+            Mujer mujer = new Mujer("Ella");
+            persona = mujer;
+            persona.MostrarNombre();
         }
 
     }    
