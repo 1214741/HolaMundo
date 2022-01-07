@@ -1,19 +1,17 @@
 ﻿<Properties StartupConfiguration="{0D73F1B4-04B8-4532-882C-CD86CE8B2454}|Default">
   <MonoDevelop.Ide.ItemProperties.HolaMundo PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="HolaMundo/Estructuras.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="HolaMundo/Program.cs">
     <Files>
-      <File FileName="HolaMundo/Program.cs" Line="35" Column="27" />
-      <File FileName="HolaMundo/Colecciones.cs" />
-      <File FileName="HolaMundo/Encapsulamiento.cs" />
-      <File FileName="HolaMundo/Herencia.cs" />
-      <File FileName="HolaMundo/Estructuras.cs" Line="40" Column="51" />
+      <File FileName="HolaMundo/Program.cs" Line="37" Column="13" />
+      <File FileName="HolaMundo/Enum.cs" />
+      <File FileName="HolaMundo/Estructuras.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="HolaMundo" expanded="True">
             <Node name="HolaMundo" expanded="True">
-              <Node name="Estructuras.cs" selected="True" />
+              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>

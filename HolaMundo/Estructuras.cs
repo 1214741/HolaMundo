@@ -18,6 +18,7 @@
      * - No neceite convertir a objeto
      * - Mayor rendimiento
      */
+    //public class Empleado
     public struct Empleado
     {
         public double Salario, Bonificacion;
@@ -34,7 +35,11 @@
 
         public void AumentarSalario(Empleado empleado, double incremento)
         {
-            // Los calores no van a cambiar, ya que lo datos son inmutables
+            /*
+             * El cambio no se va a ver reflejado, ya que esto los estoy haciendo
+             * en la copia creada, y no en la instancia original
+             * Tengo que entender mejor en que casos usar las struct
+             */
             empleado.Salario += incremento;
             empleado.Bonificacion += incremento * 0.5;
         }

@@ -5,6 +5,7 @@ using SobreCarga;
 using Encapsulamiento;
 using Colecciones;
 using Estructuras;
+using Enum;
 
 // Juan
 
@@ -32,8 +33,8 @@ namespace HolaMundo
             //CapturaDeLosErrores.Checar();
             //UsarThrow();
             //ClasesAnonimas();
-            Estructuras();
-
+            //Estructuras();
+            Enum();
         }
 
         public static void ClasesAnonimas()
@@ -191,6 +192,14 @@ namespace HolaMundo
             Empleado juan = new Empleado(1500, 200);
             juan.AumentarSalario(juan, 300);
             Console.WriteLine(juan);
+        }
+
+        static public void Enum()
+        {
+            EmpleadoEnum juan = new EmpleadoEnum(Bonus.medio, 2000);
+            Console.WriteLine(juan.NuevoSalario());
+            EmpleadoEnum fernando = new EmpleadoEnum(Bonus.alto, 2000);
+            Console.WriteLine(fernando.NuevoSalario());
         }
 
     }    
