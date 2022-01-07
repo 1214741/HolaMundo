@@ -6,6 +6,7 @@ using Encapsulamiento;
 using Colecciones;
 using Estructuras;
 using Enum;
+using Destructores;
 
 // Juan
 
@@ -34,7 +35,8 @@ namespace HolaMundo
             //UsarThrow();
             //ClasesAnonimas();
             //Estructuras();
-            Enum();
+            //Enum();
+            Destructor();
         }
 
         public static void ClasesAnonimas()
@@ -202,5 +204,10 @@ namespace HolaMundo
             Console.WriteLine(fernando.NuevoSalario());
         }
 
+        static public void Destructor()
+        {
+            LeerArchivo archivo = new LeerArchivo();
+
+        }
     }    
 }
