@@ -4,6 +4,7 @@ using Herencia;
 using SobreCarga;
 using Encapsulamiento;
 using Colecciones;
+using Estructuras;
 
 // Juan
 
@@ -21,7 +22,7 @@ namespace HolaMundo
 
             //Arreglo();
             //Matriz();
-            Encapsulamiento(35);
+            //Encapsulamiento(35);
             //Sobrecarga();
             //Herencia();
             //HerenciaSustitucion();
@@ -31,6 +32,7 @@ namespace HolaMundo
             //CapturaDeLosErrores.Checar();
             //UsarThrow();
             //ClasesAnonimas();
+            Estructuras();
 
         }
 
@@ -111,8 +113,8 @@ namespace HolaMundo
         {
             // TODO: Clase Automovil
             Automovil auto = new Automovil(vel, 2000);
-            int v = auto.Velocidad; // Ontener el set de un atributo
-            Console.WriteLine("La velocidad es: {0}, y si precio es: {1}", v, auto.Precio);
+            int v = auto.Velocidad; // Obtener el set de un atributo
+            Console.WriteLine("La velocidad es: {0}, y su precio es: {1}", v, auto.Precio);
             auto.Velocidad = vel * 2; // Asignar el get a un atributo
             Console.WriteLine("La nueva velocidad es: {0}", auto.Velocidad);
         }
@@ -182,6 +184,13 @@ namespace HolaMundo
             /*
              * En la clase Hombre no aparece Tallaje, ya que el no hereda de esta interface
              */
+        }
+
+        static public void Estructuras()
+        {
+            Empleado juan = new Empleado(1500, 200);
+            juan.AumentarSalario(juan, 300);
+            Console.WriteLine(juan);
         }
 
     }    
