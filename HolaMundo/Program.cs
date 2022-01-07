@@ -7,6 +7,7 @@ using Colecciones;
 using Estructuras;
 using Enum;
 using Destructores;
+using Genericos;
 
 // Juan
 
@@ -36,7 +37,8 @@ namespace HolaMundo
             //ClasesAnonimas();
             //Estructuras();
             //Enum();
-            Destructor();
+            //Destructor();
+            Genericos();
         }
 
         public static void ClasesAnonimas()
@@ -206,7 +208,48 @@ namespace HolaMundo
 
         static public void Destructor()
         {
-            LeerArchivo archivo = new LeerArchivo();
+            // No le pongo nombre ya que no voy a hacer nada con el objeto
+            LeerArchivo _ = new LeerArchivo();
+        }
+
+        static public void Genericos()
+        {
+            /*
+             * Puedo almacenar objetos de tipo Carrito, Muneco y Cocinita en la
+             * clase genérica AlmacenarJuguetes,ya que heredan de la interfaz
+             * IJuguete, y no tengo que hacer casting cada vez que instancio una
+             * de estas llamadas
+             */
+            AlmacenarJuguetes<Carrito> carritos = new AlmacenarJuguetes<Carrito>(3);
+            carritos.AgregarJuguete(new Carrito(45));
+            carritos.AgregarJuguete(new Carrito(37));
+            carritos.AgregarJuguete(new Carrito(100));
+
+            carritos.GetJuguete(1).Comprar();
+
+            AlmacenarJuguetes<Muneco> muneco = new AlmacenarJuguetes<Muneco>(2);
+            muneco.AgregarJuguete(new Muneco(29));
+            muneco.AgregarJuguete(new Muneco(56));
+
+            muneco.GetJuguete(1).Comprar();
+
+            AlmacenarJuguetes<Cocinita> cocinita = new AlmacenarJuguetes<Cocinita>(2);
+            cocinita.AgregarJuguete(new Cocinita(156));
+            cocinita.AgregarJuguete(new Cocinita(93));
+
+            cocinita.GetJuguete(0).Comprar();
+
+            /*
+             * El siguiente llamado al descomentarlo me genera error, ya que la
+             * clase Arma no hereda de la interfaz IJuguete, creando una restriccion
+             * y hace que mi código tenga sentido, ya que no puedo almacenar un
+             * objeto de tipo Arma como si fuera un objeto de tipo Juguete,
+             * aunque tengan los mismos métodos
+             */
+            // AlmacenarJuguetes<Arma> arma = new AlmacenarJuguetes<Arma>(5);
+
+
+
 
         }
     }    
