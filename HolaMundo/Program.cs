@@ -14,14 +14,15 @@ namespace HolaMundo
         static void Main(string[] args)
         {
             //TiposColecciones tiposColecciones = new TiposColecciones();
-            //Arreglo();
-            //Matriz();
             //tiposColecciones.Colecciones(); //Métodos públicos
             //TiposColecciones.Pila(); // Métodos estáticos
             //TiposColecciones.Queue();
             //TiposColecciones.HashTable();
-            //Automovil(35);
-            Sobrecarga();
+
+            //Arreglo();
+            //Matriz();
+            Encapsulamiento(35);
+            //Sobrecarga();
             //Herencia();
             //HerenciaSustitucion();
             //Polimorfismo();
@@ -106,7 +107,7 @@ namespace HolaMundo
             }
         }
 
-        static public void Automovil(int vel)
+        static public void Encapsulamiento(int vel)
         {
             // TODO: Clase Automovil
             Automovil auto = new Automovil(vel, 2000);
@@ -144,6 +145,10 @@ namespace HolaMundo
             // Método particular de cada clase
             hombre.Afeitarse();
             mujer.PintarUnas();
+
+            // Reescribiendo el código, adaptando el base de la clase padre
+            hombre.ColorDelCabello("Negro");
+            mujer.ColorDelCabello("Rojo");
 
             Console.WriteLine($"Edad de {hombre.Nombre}: {hombre.Edad}\nEdad de {mujer.Nombre}: {mujer.Edad}");            
         }

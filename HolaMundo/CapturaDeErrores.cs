@@ -71,33 +71,23 @@ namespace CapturaDeErrores
 
         }
         static public string NombreDia(int a)
-        {   
-            switch (a)
+        {
+            // Forma nueva de hacer un switch sencillo, analizar bien
+            return a switch
             {
-                case 1:
-                    return "Lunes";
-                case 2:
-                    return "Martes";
-                case 3:
-                    return "Miercoles";
-                case 4:
-                    return "Jueves";
-                case 5:
-                    return "Viernes";
-                case 6:
-                    return "Sábado";
-                case 7:
-                    return "Domingo";
-                default:
-                    /*
+                1 => "Lunes",
+                2 => "Martes",
+                3 => "Miercoles",
+                4 => "Jueves",
+                5 => "Viernes",
+                6 => "Sábado",
+                7 => "Domingo",
+                _ => throw new ArgumentOutOfRangeException(),/*
                      * Hacemos que nuestro código lance expeciones cuando el usuario 
                      * hace algo que no debería
                      * Las excepciones se pueden capturar con un try...catch...
                      */
-                    throw new ArgumentOutOfRangeException();
-
-            }
-            
+            };
         }
     }
 }
