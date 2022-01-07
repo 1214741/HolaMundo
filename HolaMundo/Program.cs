@@ -21,11 +21,11 @@ namespace HolaMundo
             //TiposColecciones.Queue();
             //TiposColecciones.HashTable();
             //Automovil(35);
-            //Calc();
+            Sobrecarga();
             //Herencia();
             //HerenciaSustitucion();
             //Polimorfismo();
-            Interfaces();
+            //Interfaces();
             //CapturaDeLosErrores.IngresarNumero();
             //CapturaDeLosErrores.Checar();
             //UsarThrow();
@@ -116,11 +116,12 @@ namespace HolaMundo
             Console.WriteLine("La nueva velocidad es: {0}", auto.Velocidad);
         }
 
-        static public void Calc()
+        static public void Sobrecarga()
         {
             Calculadora calculadora = new Calculadora();
             calculadora.Suma();
             calculadora.Suma(9);
+            calculadora.Suma("79");
         }
 
         static public void Herencia()
@@ -173,6 +174,9 @@ namespace HolaMundo
         {
             Mujer mujer = new Mujer("Maria");
             mujer.Tallaje(5);
+            /*
+             * En la clase Hombre no aparece Tallaje, ya que el no hereda de esta interface
+             */
         }
 
     }    

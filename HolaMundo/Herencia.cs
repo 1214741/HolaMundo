@@ -48,7 +48,7 @@ namespace Herencia
     // Debo heredar primero de la clase, y luego las interfaces que use
     class Mujer : Persona, ITallaCopa
     {
-        // Constructor recontruido
+        // Constructor reconstruido
         public Mujer(string nombre) : base(nombre) => Console.WriteLine("Soy mujer");
 
         public void PintarUnas()
@@ -59,8 +59,15 @@ namespace Herencia
         // Polimorfismo: Oculto el método de la clase Persona y ejecuto este
         public override void HacerPendejadas() => Console.WriteLine("Yo no hago pendejadas");
 
+
+        /* 
+         * Para resolver problemas de ambiguedad, elimino el public
+         * y el método se llama INombreInterface.NombreMetodo
+         */
+
         public void Tallaje(int tc)
         {
+            // Debo implementar si o si el método de la interface, para no tener errores
             Console.WriteLine($"Mi talla de copa es: {tc}");
         }
     }
